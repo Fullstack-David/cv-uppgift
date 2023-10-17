@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellcome to my page.</title>
+    <meta name="description" content="landing page for Fullstack JavaScript" />
+    <!--Min CSS-länk-->
+    <link rel="stylesheet" href="/home/style.css" />
+    <!--Google font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Länk för att kartan ska funka som den ska-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Logo-länk-->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Navbar menyn-->
+    <nav class="navbar">
+      <div class="nav-logo"><a href="/home/index.html">Logo</a></div>
+      <div class="nav-home">
+        <a href="/home/index.html">Home</a>
+        <a href="/aboutme/aboutme.html">About me</a>
+        <a href="/project/project.html">Projects</a>
+      </div>
+      <div class="colo-btn">
+        <a href="/contact/contact.html" class="contact-btn">Contact</a>
+        <a href="#" class="login-btn">Login</a>
+      </div>
+    </nav>
+
+    <!--Main content för alla sex-boxar-->
+    <!--Main-section-one, box-three and box-four in thw home-page-->
+    <section class="main-section-one">
+      <div class="box-one">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+            alt="laptop"
+          />
+        </div>
+
+        <div class="content">
+          <h2><a href="/aboutme/aboutme.html" class="a-hover">About me</a></h2>
+          <p>
+            En superengagerad fullstack-utvecklare student som verkar ha hittat
+            sin personal legend.
+          </p>
+        </div>
+      </div>
+      <div class="box-two">
+        <div>
+          <img src="/assets/info.jpg" alt="laptop" />
+        </div>
+        <div class="content">
+          <h2>
+            <a href="/project/project.html" class="a-hover">Information</a>
+          </h2>
+
+          <p>
+            Här får du en liten försmak av mina it-projekt som jag har skapat
+            senatse året. Om du vill se mer så kan du bläddra framåt. <br />
+            <span class="cv-link">
+              <a href="/aboutme/aboutme.html">Kika på mitt CV.</a></span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Main-section-two, box-five and box-six-->
+    <!--Härifrån ska jag ändra mina fyra boxar, box three, four, five and six-->
+    <div class="main-sectiontwo-title">
+      <h2><a href="/project/project.html">Projects</a></h2>
+    </div>
+    <div class="main-section-two">
+      <div class="div-firsttwo-box">
+        <div class="box-three">
+          <img src="/assets/anonymous.jpg" alt="anonymous" />
+          <div class="text-behind-three">
+            <h2>Hobbys</h2>
+            <p>
+              Naturen är en källa till skönhet, frid och inspirerande mångfald
+              som berikar våra liv.
+            </p>
+            <button
+              class="btn-btn"
+              onclick="window.location.href='/aboutme/aboutme.html'"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+        <div class="box-four">
+          <img src="/assets/anonymous.jpg" alt="anonymous" />
+          <div class="text-behind-four">
+            <h2>Educations</h2>
+            <p>
+              Utbildning är nyckeln till kunskap, utveckling och möjligheter i
+              livet.
+            </p>
+            <button
+              class="btn-btn"
+              onclick="window.location.href='/aboutme/aboutme.html'"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--Section två för de andra sista boxarna-->
+      <div class="div-secondtwo-box">
+        <div class="box-five">
+          <img src="/assets/anonymous.jpg" alt="anonymous" />
+          <div class="text-behind-five">
+            <h2>Visions</h2>
+            <p>
+              Min vision är att skapa mitt eget företag inom framtiden och göra
+              en positiv inverkan på samhället.
+            </p>
+            <button
+              class="btn-btn"
+              onclick="window.location.href='/aboutme/aboutme.html'"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+
+        <div class="box-six">
+          <img src="/assets/anonymous.jpg" alt="anonymous" />
+          <div class="text-behind-six">
+            <h2>Lorem Ipsum</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+              deleniti exercitationem quasi excepturi architecto voluptate.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-btn">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-menu">
+        <i class="fa-brands fa-facebook" style="color: #0026e6"></i>
+        <i class="fa-brands fa-instagram" style="color: #db0000"></i>
+        <i class="fa-brands fa-square-github"></i>
+        <i class="fa-brands fa-linkedin" style="color: #005eff"></i>
+      </div>
+    </footer>
+    <!--JavaScript länk för att ikonerna ska fungera som ikoner-->
+    <script
+      src="https://kit.fontawesome.com/978f3efbb8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

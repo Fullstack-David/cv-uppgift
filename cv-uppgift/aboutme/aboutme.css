@@ -1,0 +1,370 @@
+:root {
+  --main-color: white;
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: var(--font-family);
+  background-color: #8670a9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*------------- Navbar ---------------------*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #878787;
+  margin-bottom: 20px;
+  background-image: url("/assets/watermelon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav-logo {
+  font-size: 3rem;
+  margin: 20px;
+  color: white;
+}
+
+.nav-home {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  justify-content: center;
+}
+
+.colo-btn {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  gap: 20px;
+}
+.contact-btn {
+  background-color: #009df7;
+  padding: 6px 15px;
+  color: white;
+  border-radius: 10px;
+}
+
+.login-btn {
+  background-color: black;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -----Navbar hover effekt ---- */
+.nav-logo a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.nav-home a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+  font-size: larger;
+  border-bottom: 1px solid;
+}
+
+.colo-btn a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+  background-color: #878787;
+}
+
+/*---------------  Main Content ---------------*/
+
+.sub-content {
+  background-color: #faeaff;
+  display: flex;
+  width: 80%;
+  height: auto;
+  border: 2px solid;
+  border-radius: 10px;
+  gap: 40px;
+  margin: 20px auto;
+  padding: 1rem;
+  flex-wrap: wrap;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.sub-img-content {
+  display: flex;
+}
+.sub-img-content h2 {
+  padding-bottom: 1rem;
+}
+
+.sub-img-content img {
+  height: auto;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.sub-img-content img:hover {
+  transition: 2s;
+  border-radius: 30%;
+}
+
+.sub-text-content {
+  gap: 20px;
+  font-size: 1.6rem;
+  padding: 1rem;
+  line-height: 2.2rem;
+}
+
+/*---------------- De tre bildernas section --------------------*/
+.main-sub-sub-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.sub-sub-content-boxone:hover,
+.sub-sub-content-boxtwo:hover,
+.sub-sub-content-boxthree:hover {
+  transform: rotateY(30deg);
+  transition: 1s ease-in-out;
+  background-color: #cad2c5;
+}
+
+.sub-sub-content-boxone {
+  background-color: #faeaff;
+  width: 30%;
+  margin: 2rem 0.5rem;
+  border: 2px solid;
+  padding: 1.2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+}
+
+.sub-sub-content-boxtwo {
+  background-color: #faeaff;
+  width: 30%;
+  margin: 2rem 0.5rem;
+  border: 2px solid;
+  padding: 1.2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+}
+.sub-sub-content-boxthree {
+  background-color: #faeaff;
+  width: 30%;
+  margin: 2rem 0.5rem;
+  border: 2px solid;
+  padding: 1.2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+}
+
+.sub-sub-content-boxone h2,
+.sub-sub-content-boxtwo h2,
+.sub-sub-content-boxthree h2 {
+  padding: 1rem 0;
+}
+.sub-sub-content p {
+  padding: 0 1rem;
+}
+.sub-sub-content-boxone img,
+.sub-sub-content-boxtwo img,
+.sub-sub-content-boxthree img {
+  width: 100%;
+  height: auto;
+}
+.sub-sub-content:hover {
+  transform: rotateY(20deg);
+  transition: 1s;
+  background-color: #e6f4f1;
+}
+
+.sub-sub-text-content {
+  font-size: 1.6rem;
+  padding: 1rem;
+  line-height: 2.2rem;
+}
+
+/*-------------Footer-----------------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #009df7;
+}
+
+.footer-menu {
+  flex-direction: row;
+  display: flex;
+  font-size: 4rem;
+  gap: 50px;
+}
+
+.footer-menu .fa-facebook:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-instagram:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-square-github:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-linkedin:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+
+/*-------------Mediaqueri---------------------*/
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .sub-text-content,
+  .sub-sub-text-content p {
+    font-size: 1rem;
+  }
+  .navbar {
+    height: 150px;
+  }
+  .navbar .nav-logo {
+    display: none;
+  }
+  .navbar .colo-btn {
+    font-size: 1.3rem;
+  }
+  .nav-home {
+    display: flex;
+    align-items: center;
+    left: 0;
+  }
+  .nav-home a {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    padding-top: 25%;
+  }
+  .footer-menu {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    height: 100vh;
+  }
+  /*---------Navbar-----------------*/
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .colo-btn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 1.7rem;
+  }
+
+  .nav-home {
+    padding-bottom: 20px;
+    font-size: 1.7rem;
+  }
+  /*-------------Content--------------------*/
+  .sub-content {
+    width: 100%;
+  }
+
+  .main-sub-sub-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .sub-sub-content-boxone,
+  .sub-sub-content-boxtwo,
+  .sub-sub-content-boxthree {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .sub-img-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub-img-content img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    height: 100vh;
+  }
+  img {
+    border-radius: 20px;
+  }
+
+  .main-section-one {
+    display: flex;
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .box-one,
+  .box-two {
+    width: 100%;
+    display: flex;
+  }
+
+  .main-section-two {
+    justify-content: center;
+  }
+  .content {
+    padding: 1rem;
+  }
+
+  .div-firsttwo-box {
+    display: flex;
+  }
+
+  .div-secondtwo-box {
+    display: flex;
+  }
+}

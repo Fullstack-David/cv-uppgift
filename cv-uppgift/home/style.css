@@ -1,0 +1,481 @@
+:root {
+  --main-color: white;
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: var(--font-family);
+  background-color: #648767;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*------------- Navbar ---------------------*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #878787;
+  margin-bottom: 20px;
+  background-image: url("/assets/watermelon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav-logo {
+  font-size: 3rem;
+  margin: 20px;
+  color: white;
+}
+
+.nav-home {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  justify-content: center;
+}
+
+.colo-btn {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  gap: 20px;
+}
+.contact-btn {
+  background-color: #51a4d4;
+  padding: 6px 15px;
+  color: white;
+  border-radius: 10px;
+}
+
+.login-btn {
+  background-color: black;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+/* -----Navbar hover effekt ---- */
+.nav-logo a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.nav-home a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+  font-size: larger;
+  border-bottom: 1px solid;
+}
+
+.colo-btn a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+}
+.contact-btn a:hover {
+  background-color: #51a4d4;
+}
+/*----------- Section one ---------------------*/
+
+.main-section-one {
+  display: flex;
+  gap: 20px;
+}
+.content a {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box-one img,
+.box-two img {
+  height: 250px;
+  width: 200px;
+}
+/* box-one and box-two:hover effekt */
+.box-one:hover img,
+.box-two:hover img {
+  transform: rotateY(20deg);
+  transition: 1s;
+}
+
+p::first-letter {
+  font-size: 2.5rem;
+}
+p {
+  padding-top: 10px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+.cv-link a {
+  color: #3a86ff;
+  border-bottom: 1px solid #3a86ff;
+}
+.content {
+  padding-bottom: 0px;
+}
+
+.a-hover:hover {
+  color: yellow;
+  transition: 0.5s;
+  border-bottom: 1px solid;
+}
+
+.box-one,
+.box-two {
+  display: flex;
+  gap: 30px;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-one {
+  background-color: #ffd6a5;
+  background-image: url("/assets/egg.png");
+}
+.box-two {
+  background-color: #ffd6a5;
+  background-image: url("/assets/purpel.png");
+}
+
+/*------------ Header --------------------------*/
+.main-sectiontwo-title {
+  margin: 3rem;
+}
+.main-sectiontwo-title a {
+  text-transform: uppercase;
+  color: black;
+  border-right: 5px solid;
+  border-left: 5px solid;
+  padding: 6px 20px;
+  font-size: 2rem;
+
+  font-family: "Times New Roman", Times, serif;
+}
+.main-sectiontwo-title a:hover {
+  color: yellow;
+  transition: 1s;
+  border-bottom: 1px solid yellow;
+}
+/*----------- Section two ---------------------*/
+
+.main-section-two {
+  display: flex;
+  gap: 20px;
+  margin: 20px 20px;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Här har jag börjat min extra-touch */
+
+.box-three img,
+.box-four img,
+.box-five img,
+.box-six img {
+  transition: transform 0.8s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.box-three:hover img,
+.box-four:hover img,
+.box-five:hover img,
+.box-six:hover img {
+  transform: translateY(-150%);
+}
+
+.box-three:hover .text-behind-three,
+.box-four:hover .text-behind-four,
+.box-five:hover .text-behind-five,
+.box-six:hover .text-behind-six {
+  opacity: 1;
+}
+.text-behind-three,
+.text-behind-four,
+.text-behind-five,
+.text-behind-six {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(75, 76, 87, 0.9);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out 0.3s;
+}
+.main-section-two p {
+  font-size: 1.6rem;
+  padding: 1rem;
+  line-height: 2.2rem;
+}
+.div-firsttwo-box,
+.div-secondtwo-box {
+  display: flex;
+  gap: 20px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.box-three,
+.box-four,
+.box-five,
+.box-six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 3rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #a1d07f;
+}
+
+.btn-btn {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: #528aec;
+  color: white;
+}
+.btn-btn:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+  background-color: #3e5c76;
+}
+.main-section-two h2 {
+  padding: 1rem 0rem;
+}
+
+/*-------------Footer-----------------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #009df7;
+}
+
+.footer-menu {
+  flex-direction: row;
+  display: flex;
+  font-size: 4rem;
+  gap: 50px;
+}
+
+.footer-menu .fa-facebook:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-instagram:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-square-github:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-linkedin:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+
+/*-------------Mediaqueri---------------------*/
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+  .navbar {
+    height: 150px;
+  }
+  .navbar .nav-logo {
+    display: none;
+  }
+  .navbar .colo-btn {
+    font-size: 1.3rem;
+  }
+  .nav-home {
+    display: flex;
+    align-items: center;
+    left: 0;
+  }
+  .nav-home a {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    padding-top: 25%;
+  }
+
+  .main-section-two {
+    display: flex;
+  }
+
+  .div-firsttwo-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .div-secondtwo-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-menu {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    height: 100vh;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .colo-btn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 1.7rem;
+  }
+
+  .nav-home {
+    padding-bottom: 20px;
+    font-size: 1.7rem;
+  }
+  img {
+    width: 70%;
+
+    border-radius: 20px;
+  }
+
+  .main-section-one {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .box-one,
+  .box-two {
+    width: 100%;
+    flex-direction: column;
+  }
+  .box-three,
+  .box-four,
+  .box-five,
+  .box-sex {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .div-firsttwo-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+  }
+
+  .div-secondtwo-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+  }
+  .box-three,
+  .box-four {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-five,
+  .box-six {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-three:hover img,
+  .box-four:hover img {
+    transform: translateX(-150%);
+  }
+  .box-five:hover img,
+  .box-six:hover img {
+    transform: translateX(150%);
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    height: 100vh;
+  }
+  img {
+    border-radius: 20px;
+  }
+
+  .main-section-one {
+    display: flex;
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .box-one,
+  .box-two {
+    width: 100%;
+    display: flex;
+  }
+
+  .main-section-two {
+    justify-content: center;
+  }
+  .content {
+    padding: 1rem;
+  }
+
+  .div-firsttwo-box {
+    display: flex;
+  }
+
+  .div-secondtwo-box {
+    display: flex;
+  }
+}
