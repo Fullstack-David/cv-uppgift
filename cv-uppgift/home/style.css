@@ -27,6 +27,10 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.active-link {
+  border-bottom: 1px solid white;
+}
 a {
   text-decoration: none;
   color: white;
@@ -79,13 +83,12 @@ a {
 .nav-logo a:hover {
   color: #f4e87c;
   transition: 0.5s;
-  transform: scale(1.2);
 }
 .nav-home a:hover {
   color: #f4e87c;
   transition: 0.5s;
-  font-size: larger;
-  border-bottom: 1px solid;
+  font-size: 2.1rem;
+  /*border-bottom: 1px solid;*/
 }
 
 .colo-btn a:hover {

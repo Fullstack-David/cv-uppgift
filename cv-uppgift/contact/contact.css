@@ -65,7 +65,7 @@ a {
   gap: 20px;
 }
 .contact-btn {
-  background-color: #009df7;
+  background-color: #071c29;
   padding: 6px 15px;
   color: white;
   border-radius: 10px;
@@ -90,13 +90,11 @@ a {
 .nav-logo a:hover {
   color: #f4e87c;
   transition: 0.5s;
-  transform: scale(1.2);
 }
 .nav-home a:hover {
   color: #f4e87c;
   transition: 0.5s;
-  font-size: larger;
-  border-bottom: 1px solid;
+  font-size: 2.1rem;
 }
 
 .colo-btn a:hover {
