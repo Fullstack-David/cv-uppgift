@@ -20,7 +20,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #878787;
+  background-color: #4392f1;
   margin-bottom: 20px;
   background-image: url("/assets/blue.png");
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ img {
   width: 300px;
   height: auto;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 /*-------------Footer-----------------------*/
@@ -140,7 +140,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #009df7;
+  background-color: #3a405a;
   padding: 30px;
 }
 
