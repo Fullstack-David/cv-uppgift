@@ -2,6 +2,7 @@ const subContent = document.querySelector('.main-content');
 
 
 
+
 async function getInfo() {
     
     const response = await fetch('main.json');
@@ -18,9 +19,14 @@ async function getInfo() {
     }
 }
 
+
 function getCvs(myCvs) {
     
     const cvLists = document.createElement('ul');
+    const titel = document.createElement('h1');
+    const firstDiv = document.createElement('div');
+    //const secondDiv = document.createElement('div');
+
     myCvs.forEach(function (myCv) {
 
         
@@ -36,18 +42,50 @@ function getCvs(myCvs) {
 
         infoPara.textContent = myCv.description;
 
+        titel.textContent = 'My projects'
+
         infoImg.src = myCv.picture; // Sätt bildkälla
 
-        //cvLists.appendChild(liLists)
+
+
+        
+        // ger mina två divar varsit classnamn
+        subContent.classList.add('firstDiv')
+        firstDiv.classList.add('firstDiv');
+        //subContent.classList.add('secondDiv')
+        //secondDiv.classList.add('secondDiv');
+        
+
+
         liLists.appendChild(infoHeader);
         liLists.appendChild(infoPara);
-        liLists.appendChild(infoImg);
-       
+        liLists.appendChild(infoImg);      
         cvLists.appendChild(liLists)
-        subContent.appendChild(cvLists); // Lägg till ul i det befintliga DOM-elementet
+        
+
+
+        // här appendar jag mina parent-element
+        subContent.appendChild(titel);
+        subContent.appendChild(firstDiv);
+        //subContent.appendChild(secondDiv);
+        firstDiv.appendChild(cvLists); // ändrar kursen till firstDiv, så att ul blir child till firstDiv
         
     });
     
 }
 
 getInfo();
+
+// ska försöka skapa två li-element i en ul-element som i sin tur är i en div
+/* 
+function addLiList() {
+    const liLists = document.createElement('li');
+    liLists.classList.add('firstLi');
+    firstDiv.appendChild('firstLi');
+    
+}
+*/
+
+
+
+

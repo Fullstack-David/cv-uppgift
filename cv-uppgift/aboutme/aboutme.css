@@ -1,6 +1,7 @@
 :root {
   --main-color: white;
   --font-family: "Roboto", sans-serif;
+  --font-size: 1.2rem;
 }
 
 * {
@@ -19,79 +20,70 @@ body {
 /*------------- Navbar ---------------------*/
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: #4392f1;
-  margin-bottom: 20px;
-  background-image: url("/assets/blue.png");
+  background-image: url("../assets/purpel.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-a {
-  text-decoration: none;
-  color: white;
+.active-link {
+  border-bottom: 1px solid;
 }
 .nav-logo {
-  font-size: 2rem;
-  margin: 20px;
-  color: white;
+  display: none;
+}
+.navbar a {
+  text-decoration: none;
+
+  font-size: var(--font-size);
 }
 
 .nav-home {
-  font-size: 1.5rem;
   display: flex;
-  align-items: center;
-  gap: 30px;
-  color: white;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 10px;
+}
+.nav-home a {
+  color: black;
+  font-size: var(--font-size);
 }
 
 .colo-btn {
-  font-size: 1.3rem;
   display: flex;
-  align-items: center;
-  margin: 0 20px;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 1rem;
 }
 .contact-btn {
   background-color: #009df7;
   padding: 6px 15px;
   color: white;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .login-btn {
-  background-color: black;
+  background-color: rgb(111, 107, 107);
   color: white;
-  padding: 6px 12px;
-  border-radius: 10px;
-  font-size: 1.5rem;
-}
-
-.main {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
   align-items: center;
   justify-content: center;
+  padding: 6px 12px;
+  border-radius: 8px;
 }
 
 /* -----Navbar hover effekt ---- */
 .nav-logo a:hover {
-  color: #f4e87c;
   transition: 0.5s;
   transform: scale(1.2);
 }
 .nav-home a:hover {
-  color: #f4e87c;
   transition: 0.5s;
-  font-size: 1.6rem;
-  border-bottom: 1px solid;
+  font-size: 1.1rem;
 }
 
 .colo-btn a:hover {
-  color: #f4e87c;
   transition: 0.5s;
   background-color: #878787;
 }
@@ -100,14 +92,18 @@ a {
 
 .main-content {
   display: flex;
+  flex-direction: column;
+}
 
+h1 {
   display: flex;
+  flex-direction: column;
   padding: 1rem;
 }
+
 ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   gap: 1rem;
 }
 li {
@@ -119,7 +115,7 @@ li {
   padding: 1em;
   border: 1px solid;
   border-radius: 5px;
-  max-width: 50%;
+
   gap: 1rem;
   line-height: 1.5rem;
 }
@@ -127,10 +123,16 @@ h3 {
   gap: 0.5rem;
 }
 img {
-  width: 300px;
+  width: 100%;
   height: auto;
   padding: 1rem;
-  border-radius: 30px;
+  border-radius: 10px;
+}
+
+.firstDiv ul {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 /*-------------Footer-----------------------*/
@@ -169,7 +171,7 @@ footer {
 }
 
 /*-------------Mediaqueri---------------------*/
-
+/*
 @media (max-width: 500px) {
   h2 {
     font-size: 1.5rem;
@@ -179,7 +181,7 @@ footer {
   .sub-sub-text-content p {
     font-size: 1rem;
   }
-  */
+ 
   .navbar {
     height: 150px;
   }
@@ -203,6 +205,7 @@ footer {
     font-size: 3rem;
   }
 }
+ */
 @media (max-width: 900px) {
   body {
     height: 100vh;
