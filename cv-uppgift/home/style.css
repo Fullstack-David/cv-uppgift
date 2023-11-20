@@ -136,6 +136,13 @@ p {
   color: #3a86ff;
   border-bottom: 1px solid #3a86ff;
 }
+.gitHub {
+  display: block;
+}
+.gitHub a {
+  color: #009df7;
+  border-bottom: 1px solid #009df7;
+}
 .content {
   padding-bottom: 0px;
 }
