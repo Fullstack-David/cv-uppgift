@@ -247,11 +247,11 @@ footer {
   }
 
   /*----main-content style------*/
-
-  .firstDiv {
+  .main-content {
     display: flex;
   }
-  ul {
+  .firstDiv ul {
     display: flex;
+    flex-direction: row;
   }
 }
