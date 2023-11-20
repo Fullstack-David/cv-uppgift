@@ -50,9 +50,9 @@ function getCvs(myCvs) {
 
         
         // ger mina två divar varsit classnamn
-        subContent.classList.add('firstDiv')
+        firstDiv.classList.add('firstDiv')
         firstDiv.classList.add('firstDiv');
-        //subContent.classList.add('secondDiv')
+        //secondDiv.classList.add('secondDiv')
         //secondDiv.classList.add('secondDiv');
         
 
