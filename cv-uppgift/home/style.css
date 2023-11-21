@@ -72,16 +72,7 @@ body {
   padding: 6px 25px;
   border-radius: 8px;
 }
-/*
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-*/
+
 /* -----Navbar hover effekt ---- */
 .nav-logo a:hover {
   color: #f4e87c;
@@ -122,7 +113,8 @@ body {
 }
 h2 {
   font-size: 1.4rem;
-  margin: 1rem 0;
+
+  padding: 1rem;
 }
 
 .box-one img,
@@ -233,7 +225,7 @@ p {
 .text-behind-four,
 .text-behind-five,
 .text-behind-six {
-  padding: 1rem;
+  padding: 0 1rem;
   line-height: 10px;
   /*opacity: 0;
   transition: opacity 1s ease-in-out 0.3s;*/
@@ -260,7 +252,9 @@ p {
   width: 100%;
   margin-top: 20px;
 }
-
+.btn-btn:last-child {
+  margin-bottom: 10px;
+}
 .btn-btn:hover {
   color: #f4e87c;
   transition: 0.5s;
@@ -366,6 +360,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
   .image img {
     width: 400px;
     height: 250px;
@@ -376,30 +371,64 @@ footer {
     display: flex;
     flex-direction: row;
   }
+  /*--------ändrar alla bilder på section två -------*/
 
   .div-firsttwo-box,
   .div-secondtwo-box {
-    min-width: 50%;
     display: flex;
     flex-direction: row;
-  }
 
-  /*
+    justify-content: space-around;
+  }
   .box-three,
   .box-four,
   .box-five,
-  .box-sex {
-    font-size: 1.5rem;
+  .box-six {
+    max-width: 50%;
+    height: 20%;
   }
-*/
+
   .content {
     padding: 1rem;
   }
 
-  .box-three:hover img,
-  .box-four:hover img,
-  .box-five:hover img,
-  .box-six:hover img {
-    transform: translateY(-150%);
+  .box-three:hover .text-behind-three,
+  .box-four:hover .text-behind-four,
+  .box-five:hover .text-behind-five,
+  .box-six:hover .text-behind-six {
+    opacity: 1;
+  }
+
+  .sectiontwo-images img {
+    display: none;
+    /*
+    width: 100%;
+    height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+  }
+  .sectiontwo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectiontwo-images:hover img,
+  .sectiontwo-images:hover img,
+  .sectiontwo-images:hover img,
+  .sectiontwo-images:hover img {
+    transform: translateX(-150%);
+  }
+  .text-behind-three,
+  .text-behind-four,
+  .text-behind-five,
+  .text-behind-six {
+    background-color: lightblue;
+    padding: 1rem;
+    line-height: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 0.3s;
   }
 }
