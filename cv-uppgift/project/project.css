@@ -15,53 +15,53 @@ body {
 }
 /*------------- Navbar ---------------------*/
 .navbar {
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
   background: #1f4037;
   background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
   background: linear-gradient(to right, #99f2c8, #1f4037);
 }
 .active-link {
   border-bottom: 1px solid white;
-}
-a {
-  text-decoration: none;
-  color: white;
+  /*width: 18%;*/
 }
 .nav-logo {
-  font-size: 2rem;
-  margin: 20px;
-  color: white;
+  display: none;
 }
 
 .nav-home {
-  font-size: 1.5rem;
   display: flex;
-  align-items: center;
-  gap: 25px;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.nav-home a,
+.colo-btn a {
+  font-size: 1.2rem;
+  text-decoration: none;
   color: white;
 }
 
 .colo-btn {
-  font-size: 1.3rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 0 20px;
-  gap: 20px;
+  gap: 10px;
+  padding: 1rem;
 }
 .contact-btn {
   background-color: #009df7;
   padding: 6px 15px;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .login-btn {
   background-color: black;
   color: white;
-  padding: 6px 12px;
-  border-radius: 10px;
+  padding: 6px 25px;
+  border-radius: 5px;
 }
 
 /* -----Navbar hover effekt ---- */
@@ -86,25 +86,13 @@ a {
 /*------------- Main-hero ------------------*/
 .main-hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 10px;
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  gap: 30px;
+  gap: 20px;
 }
 
 .main-hero-div {
   display: flex;
   flex-direction: column;
-  line-height: 1.6rem;
-  font-size: 1.3rem;
-  padding: 1rem;
-
-  border-radius: 10px;
-  margin: 1rem;
+  border-radius: 5px;
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -119,16 +107,15 @@ a {
 .main-hero-div img {
   width: 100%;
   height: auto;
-  padding: 1rem;
 }
 
 h1 {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: ;
   padding: 1rem;
-  margin: 0 6.5rem;
+  margin-top: 1rem;
   font-size: 2rem;
   border-top: 2px solid;
   border-bottom: 2px solid;
@@ -140,10 +127,9 @@ h1 {
 p::first-letter {
   font-size: 2rem;
 }
-.main-hero-div p {
-  font-size: 1.1rem;
+p {
   padding: 1rem;
-  line-height: 2.2rem;
+  line-height: 2rem;
 }
 
 /*-------------Footer-----------------------*/
@@ -182,72 +168,40 @@ footer {
 }
 
 /*-------------Mediaqueri---------------------*/
-@media (max-width: 500px) {
-  h2 {
-    font-size: 2rem;
-  }
-  .main-hero-div p {
-    font-size: 1rem;
-  }
-  .navbar {
-    height: 150px;
-  }
-  .navbar .nav-logo {
-    display: none;
-  }
-  .navbar .colo-btn {
-    font-size: 1.3rem;
-  }
-  .nav-home {
-    display: flex;
-    align-items: center;
-    left: 0;
-    font-size: 1.7rem;
-  }
-  .nav-home a {
-    font-size: 1.3rem;
-    padding: 1rem;
-    padding-top: 25%;
-  }
-  .footer-menu {
-    font-size: 3rem;
-  }
+@media (min-width: 820px) and (max-width: 2220px) {
 }
-@media (max-width: 900px) {
-  body {
-    height: 100vh;
-  }
-  /*---------------- Navbar ----------------------*/
-  .navbar {
-    display: flex;
-    flex-direction: column;
-  }
-  .colo-btn {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    font-size: 1.7rem;
-  }
-
-  .nav-home {
-    padding-bottom: 20px;
-    justify-content: center;
-    font-size: 1.7rem;
-  }
-  .main-hero {
-    display: flex;
-    flex-direction: column;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  .main-hero-div p {
-    font-size: 1.2rem;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.nav-logo a {
+  text-decoration: none;
+  color: white;
+}
+.nav-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.7rem;
+  gap: 4rem;
+}
+.colo-btn {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.7rem;
 }
 
-@media (min-width: 1000px) {
-  body {
-    height: 100vh;
-  }
+.main-hero {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 3%;
 }
