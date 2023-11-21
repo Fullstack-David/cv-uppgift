@@ -19,15 +19,12 @@ body {
 /*------------- Navbar ---------------------*/
 .navbar {
   display: flex;
-
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #878787;
   margin-bottom: 20px;
-  background-image: url("/assets/watermelon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #1f4037;
+  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+  background: linear-gradient(to right, #99f2c8, #1f4037);
 }
 a {
   text-decoration: none;
@@ -195,15 +192,17 @@ button:hover {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #009df7;
+  background: #003973;
+  background: -webkit-linear-gradient(to right, #e5e5be, #003973);
+  background: linear-gradient(to right, #e5e5be, #003973);
 }
 
 .footer-menu {
   flex-direction: row;
   display: flex;
-  font-size: 3rem;
+  font-size: 2.5rem;
   gap: 50px;
-  padding: 30px;
+  padding: 20px;
 }
 .footer-menu .fa-facebook:hover {
   transform: translateY(-10px);

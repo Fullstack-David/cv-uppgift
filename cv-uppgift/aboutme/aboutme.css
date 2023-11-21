@@ -21,11 +21,9 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #4392f1;
-  background-image: url("../assets/purpel.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #1f4037;
+  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+  background: linear-gradient(to right, #99f2c8, #1f4037);
 }
 .active-link {
   border-bottom: 1px solid;
@@ -143,14 +141,24 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #3a405a;
-  padding: 30px;
+  padding: 20px;
+  background: #003973; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e5e5be,
+    #003973
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e5e5be,
+    #003973
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .footer-menu {
   flex-direction: row;
   display: flex;
-  font-size: 3rem;
+  font-size: 2.5rem;
   gap: 50px;
 }
 
@@ -219,5 +227,8 @@ footer {
   .firstDiv ul {
     display: flex;
     flex-direction: row;
+  }
+  li {
+    max-width: 25%;
   }
 }
