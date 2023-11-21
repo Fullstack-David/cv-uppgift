@@ -10,14 +10,6 @@
 }
 body {
   height: 100vh;
-  /*
-  background: linear-gradient(
-      266deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
-    url("/orange.png");
-    */
   font-family: var(--font-family);
   background-color: #648767;
   background-size: cover;
@@ -150,14 +142,49 @@ input {
   font-size: 1.1rem;
 }
 
-button {
+/*-----härifrån börjar min externa kod som jag har hämtat från codepen-----*/
+#button-container {
+  padding: 0 0;
+}
+#main {
+  border: none;
   margin: 10px 20px;
-  padding: 6px 20px;
-  border-radius: 10px;
+  padding: 20px 30px;
+  border-radius: 8px;
   color: white;
   background-color: black;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.expandingAnimation {
+  animation-name: expanding-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  animation-timing-function: ease;
+}
+
+@keyframes expanding-animation {
+  0% {
+    width: 100px;
+    height: 30px;
+  }
+  50% {
+    width: 200px;
+    height: 30px;
+  }
+  100% {
+    height: 60px;
+    width: 200px;
+  }
+}
+
+/*--------här slutar det-----------*/
 button:hover {
   background-color: #878787;
   transition: 0.3s;

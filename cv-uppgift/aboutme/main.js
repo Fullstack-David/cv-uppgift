@@ -1,8 +1,6 @@
 const subContent = document.querySelector('.main-content');
 
 
-
-
 async function getInfo() {
     
     const response = await fetch('main.json');
