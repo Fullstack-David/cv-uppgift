@@ -19,9 +19,9 @@ body {
 /*------------- Navbar ---------------------*/
 .navbar {
   display: flex;
-  flex-wrap: wrap;
+  padding: 1rem;
   justify-content: space-between;
-  margin-bottom: 20px;
+
   background: #1f4037;
   background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
   background: linear-gradient(to right, #99f2c8, #1f4037);
@@ -31,50 +31,45 @@ a {
   color: white;
 }
 .nav-logo {
-  font-size: 2rem;
-  margin: 20px;
-  color: white;
+  display: none;
 }
 
 .nav-home {
-  font-size: 1.5rem;
   display: flex;
-
-  align-items: center;
-  gap: 30px;
-  color: white;
+  flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 
-.colo-btn {
-  font-size: 1.3rem;
-  display: flex;
-  align-items: center;
-  margin: 0 20px;
-  gap: 20px;
+.nav-home a {
+  font-size: 1.2rem;
 }
+.colo-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.colo-btn a {
+  font-size: 1.2rem;
+}
+
 .contact-btn {
   background-color: #071c29;
   padding: 6px 15px;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .login-btn {
   background-color: black;
   color: white;
-  padding: 6px 12px;
-  border-radius: 10px;
+  padding: 6px 25px;
+  border-radius: 5px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
 /* ----- Navbar hover----- */
 .nav-logo a:hover {
   color: #f4e87c;
@@ -83,7 +78,7 @@ a {
 .nav-home a:hover {
   color: #f4e87c;
   transition: 0.5s;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .colo-btn a:hover {
@@ -96,31 +91,28 @@ a {
 
 .contact-page {
   display: flex;
-  padding: 1rem;
-  margin: 50px auto;
+  flex-direction: column;
+  gap: 20px;
+}
+.user-contact {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  margin-top: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+form label {
+  font-size: 1.2rem;
 }
 
 .main-info {
   display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-
   justify-content: center;
   align-items: center;
 }
 
-.user-contact {
-  border: 1px solid black;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  padding: 10px;
-  min-width: 50%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
 h1 {
   padding: 20px;
   font-size: 1.8rem;
@@ -133,16 +125,12 @@ form {
 }
 
 input {
-  padding: 5px 10px;
+  padding: 5px;
   width: 100%;
-  height: 5vh;
-  font-size: 1.1rem;
 }
 
 /*-----härifrån börjar min externa kod som jag har hämtat från codepen-----*/
-#button-container {
-  padding: 0 0;
-}
+
 #main {
   border: none;
   margin: 10px 20px;
@@ -154,6 +142,10 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#main:hover {
+  background: lightgray;
+  transition: 1s;
 }
 
 .expandingAnimation {
@@ -182,10 +174,6 @@ input {
 }
 
 /*--------här slutar det-----------*/
-button:hover {
-  background-color: #878787;
-  transition: 0.3s;
-}
 
 /*-------------Footer-----------------------*/
 
@@ -221,162 +209,55 @@ footer {
   transition: 0.8s;
 }
 
-/*-------------Mediaqueri---------------------*/
-@media (max-width: 500px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-  label {
-    font-size: 1.2rem;
-  }
-  input {
-    font-size: 1.2rem;
-  }
+/*-------------Mediaqueri---------------------
+
+*/
+@media (min-width: 820px) and (max-width: 2220px) {
+  /*---------navbar style---------------*/
   .navbar {
-    height: 150px;
+    display: flex;
   }
-  .navbar .nav-logo {
-    display: none;
-  }
-  .navbar .colo-btn {
-    font-size: 1.3rem;
+  .nav-logo {
+    display: inline-block;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
   }
   .nav-home {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-
-    font-size: 1.7rem;
-  }
-  .nav-home a {
-    font-size: 1.3rem;
-    padding: 0.8rem;
-    padding-top: 25%;
-  }
-  .footer-menu {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 900px) {
-  body {
-    height: 100vh;
-  }
-  h2 {
-    font-size: 1.8rem;
-  }
-  label {
-    font-size: 1.5rem;
-  }
-  input {
-    font-size: 1.2rem;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
+    gap: 4rem;
   }
   .colo-btn {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    font-size: 1.7rem;
-  }
-
-  .nav-home {
-    padding-bottom: 20px;
-    font-size: 1.7rem;
-  }
-  img {
-    width: 100%;
-    border-radius: 20px;
-  }
-  /* När jag ändrar här i min-section-one så hamnar boxarna i rutan??*/
-
-  .main-section-one {
     display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    margin: 0 auto;
+    flex-direction: row;
   }
 
-  .box-one,
-  .box-two {
-    width: 100%;
-    flex-direction: column;
-  }
-  .box-three,
-  .box-four,
-  .box-five,
-  .box-sex {
-    font-size: 1.5rem;
-  }
-  .content {
-    padding: 1rem;
-  }
-
-  .div-firsttwo-box {
+  .nav-home a {
     display: flex;
-    flex-direction: column;
   }
 
-  .div-secondtwo-box {
-    display: flex;
-    flex-direction: column;
-  }
+  /*----------content style------------------*/
 
   .contact-page {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
-    margin: 0 20px;
-    margin-bottom: 20px;
   }
+
   .user-contact {
-    width: 100%;
+  }
+  form {
+    max-width: 50%;
   }
   .main-info {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (min-width: 1000px) {
-  body {
-    height: 100vh;
-  }
-  img {
-    border-radius: 20px;
-  }
-  /* När jag ändrar här i min-section-one så hamnar boxarna i rutan??*/
-
-  .main-section-one {
-    display: flex;
-    width: auto;
-    flex-wrap: wrap;
-
-    margin: 0 auto;
-  }
-  /* här ska flex-direction: column; vara med */
-
-  .box-one,
-  .box-two {
-    width: 100%;
     display: flex;
   }
-
-  .main-section-two {
-    justify-content: center;
-  }
-  .content {
-    padding: 1rem;
-  }
-
-  .div-firsttwo-box {
-    display: flex;
-  }
-
-  .div-secondtwo-box {
-    display: flex;
+  .visby-map {
+    width: 50%;
   }
 }
