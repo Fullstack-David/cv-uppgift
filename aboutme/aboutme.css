@@ -198,9 +198,10 @@ footer {
     padding: 1rem;
   }
   .nav-logo a {
-    font-weight: 600;
-    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 500;
     color: black;
+    font-size: 2rem;
   }
   .nav-home {
     display: flex;

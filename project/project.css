@@ -183,7 +183,8 @@ footer {
   }
   .nav-logo a {
     text-decoration: none;
-    color: white;
+    font-weight: 500;
+    color: black;
   }
   .nav-home {
     display: flex;
