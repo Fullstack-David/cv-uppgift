@@ -9,7 +9,7 @@ titel.addEventListener('click', function () {
     titel.style.margin = '2rem auto';
     titel.style.padding = '10px 15px';
     titel.style.borderRadius = '8px';
-    titel.style.color = 'white';
+    
     titel.style.letterSpacing = '8px';
 
 
