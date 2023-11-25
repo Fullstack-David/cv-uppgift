@@ -15,7 +15,6 @@ body {
 }
 /*------------- Navbar ---------------------*/
 .navbar {
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   background: #1f4037;
@@ -23,8 +22,7 @@ body {
   background: linear-gradient(to right, #99f2c8, #1f4037);
 }
 .active-link {
-  border-bottom: 1px solid white;
-  /*width: 18%;*/
+  border-bottom: 1px solid;
 }
 .nav-logo {
   display: none;
@@ -34,31 +32,32 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: white;
+  padding: 1rem;
 }
 .nav-home a,
 .colo-btn a {
   font-size: 1.2rem;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .colo-btn {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   padding: 1rem;
 }
 .contact-btn {
-  background-color: #009df7;
+  background-color: #87bbd9;
   padding: 6px 15px;
   color: white;
   border-radius: 5px;
 }
 
 .login-btn {
-  background-color: black;
+  background-color: lightgray;
   color: white;
   padding: 6px 25px;
   border-radius: 5px;
@@ -70,7 +69,6 @@ body {
   transition: 0.5s;
 }
 .nav-home a:hover {
-  color: #f4e87c;
   transition: 0.5s;
   font-size: 1.3rem;
 
@@ -175,6 +173,7 @@ footer {
     justify-content: space-between;
   }
   .nav-logo {
+    padding: 1rem;
     display: inline-block;
     display: flex;
     justify-content: center;

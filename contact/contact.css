@@ -19,9 +19,7 @@ body {
 /*------------- Navbar ---------------------*/
 .navbar {
   display: flex;
-  padding: 1rem;
   justify-content: space-between;
-
   background: #1f4037;
   background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
   background: linear-gradient(to right, #99f2c8, #1f4037);
@@ -33,17 +31,24 @@ a {
 .nav-logo {
   display: none;
 }
+.active-link {
+  background-color: lightgray;
+}
 
 .nav-home {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  padding: 1rem;
+  gap: 20px;
+}
+.nav-home a,
+.colo-btn a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
 }
 
-.nav-home a {
-  font-size: 1.2rem;
-}
 .colo-btn {
   display: flex;
   flex-direction: column;
@@ -52,19 +57,16 @@ a {
   align-items: center;
   padding: 1rem;
 }
-.colo-btn a {
-  font-size: 1.2rem;
-}
 
 .contact-btn {
-  background-color: #071c29;
+  background-color: #87bbd9;
   padding: 6px 15px;
   color: white;
   border-radius: 5px;
 }
 
 .login-btn {
-  background-color: black;
+  background-color: lightgray;
   color: white;
   padding: 6px 25px;
   border-radius: 5px;
