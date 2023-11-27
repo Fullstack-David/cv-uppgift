@@ -162,6 +162,12 @@ p {
 
 h1 {
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*----------- Section two ---------------------*/
@@ -190,7 +196,7 @@ h1 {
 .box-four img,
 .box-five img,
 .box-six img {
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   width: 100%;
 }
 /*--------styling på mina images----------*/
@@ -234,25 +240,6 @@ h1 {
   background-color: #3e5c76;
 }
 
-/*------här ändrar vi till scroll ------------
-
-.box-three {
-  overflow: auto;
-}
-
-.box-four {
-  overflow: auto;
-}
-.div-secondtwo-box .box-five {
-  overflow: auto;
-}
-.box-five {
-  overflow: auto;
-}
-.box-six {
-  overflow: auto;
-}
-*/
 /*-------------Footer-----------------------*/
 
 footer {

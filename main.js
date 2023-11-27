@@ -11,6 +11,5 @@ titel.addEventListener('click', function () {
     titel.style.borderRadius = '8px';
     titel.style.color = 'white';
     titel.style.letterSpacing = '8px';
-
-
+  
 });
