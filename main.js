@@ -43,6 +43,7 @@ icon.addEventListener('click', function () {
     
     let element = document.body;
     element.classList.toggle('dark-mode');
+    icon.document.style.borderRadius = '50%';
 
 })
 
