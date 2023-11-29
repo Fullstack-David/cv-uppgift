@@ -97,7 +97,6 @@ body {
   color: #f4e87c;
   transition: 0.5s;
   font-size: 1.3rem;
-  /*border-bottom: 1px solid;*/
 }
 
 .colo-btn a:hover {
@@ -112,7 +111,6 @@ body {
 .main-section-one {
   display: flex;
   flex-direction: column;
-  /*background-color: #e3f7b4;*/
 }
 
 .box-one,
