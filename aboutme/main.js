@@ -23,7 +23,8 @@ function getCvs(myCvs) {
     const cvLists = document.createElement('ul');
     const titel = document.createElement('h1');
     const firstDiv = document.createElement('div');
-    //const secondDiv = document.createElement('div');
+    
+    
 
     myCvs.forEach(function (myCv) {
 
@@ -47,11 +48,10 @@ function getCvs(myCvs) {
 
 
         
-        // ger mina två divar varsit classnamn
+        // ger min div divar varsit classnamn
         firstDiv.classList.add('firstDiv')
         firstDiv.classList.add('firstDiv');
-        //secondDiv.classList.add('secondDiv')
-        //secondDiv.classList.add('secondDiv');
+        
         
 
 
@@ -65,8 +65,9 @@ function getCvs(myCvs) {
         // här appendar jag mina parent-element
         subContent.appendChild(titel);
         subContent.appendChild(firstDiv);
-        //subContent.appendChild(secondDiv);
-        firstDiv.appendChild(cvLists); // ändrar kursen till firstDiv, så att ul blir child till firstDiv
+        
+        // ändrar kursen till firstDiv, så att ul blir child till firstDiv
+        firstDiv.appendChild(cvLists); 
         
     });
     
@@ -74,15 +75,7 @@ function getCvs(myCvs) {
 
 getInfo();
 
-// ska försöka skapa två li-element i en ul-element som i sin tur är i en div
-/* 
-function addLiList() {
-    const liLists = document.createElement('li');
-    liLists.classList.add('firstLi');
-    firstDiv.appendChild('firstLi');
-    
-}
-*/
+
 
 
 
