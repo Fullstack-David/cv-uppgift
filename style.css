@@ -293,7 +293,7 @@ footer {
 
 /*---- media queri--------*/
 
-@media (min-width: 820px) and (max-width: 2200px) {
+@media (min-width: 768px) and (max-width: 2200px) {
   .navbar {
     display: flex;
   }

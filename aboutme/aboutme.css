@@ -181,7 +181,7 @@ footer {
 
 /*-------------Mediaqueri---------------------*/
 
-@media (min-width: 820px) and (max-width: 2220px) {
+@media (min-width: 768px) and (max-width: 2220px) {
   body {
     height: 100vh;
   }
