@@ -24,7 +24,10 @@ En av huvudpunkterna i mitt projekt är den responsiva designen. Oavsett vilken 
 
 Tack för att du utforskar mitt CV-projekt! Om du har några frågor eller feedback är jag öppen för att höra från dig. Jag hoppas att du finner sidan informativ och njuter av den användarvänliga upplevelsen.
 
-Skapad av : David Heidari (student på Chas Academy)
-Utbildning: Fullstack JavaScript Extended
-Länk till mitt project (GitHub): https://github.com/HappyLife23/cv-uppgift.git
-Länk till Netlify: https://steady-biscochitos-3dff6c.netlify.app
+-- Skapad av : David Heidari (student på Chas Academy)
+
+-- Utbildning: Fullstack JavaScript Extended
+
+-- Länk till mitt project (GitHub): https://github.com/HappyLife23/cv-uppgift.git
+
+-- Länk till Netlify: https://steady-biscochitos-3dff6c.netlify.app
