@@ -41,11 +41,12 @@ titel.addEventListener('click', handleTitelClick);
 // min dark-mode event
 icon.addEventListener('click', function () {
     
-    let element = document.body;
-    element.classList.toggle('dark-mode');
+    let element = document.body; // Hämtar referensen till <body> elementet
+    element.classList.toggle('dark-mode'); // Växlar klassen 'dark-mode' på <body> elementet, vilket styr utseendet med hjälp av CSS
+
     icon.document.style.borderRadius = '50%';
 
-})
+});
 
 
 

@@ -41,27 +41,19 @@ function getCvs(myCvs) {
 
         infoPara.textContent = myCv.description;
 
-        titel.textContent = 'My projects'
+        titel.textContent = 'My projects';
 
         infoImg.src = myCv.picture; // Sätt bildkälla
-
-
-
         
         // ger min div divar varsit classnamn
         firstDiv.classList.add('firstDiv')
         firstDiv.classList.add('firstDiv');
         
-        
-
-
         liLists.appendChild(infoHeader);
         liLists.appendChild(infoPara);
         liLists.appendChild(infoImg);      
         cvLists.appendChild(liLists)
         
-
-
         // här appendar jag mina parent-element
         subContent.appendChild(titel);
         subContent.appendChild(firstDiv);
