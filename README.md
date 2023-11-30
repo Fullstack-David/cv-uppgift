@@ -27,3 +27,4 @@ Tack för att du utforskar mitt CV-projekt! Om du har några frågor eller feedb
 Skapad av : David Heidari (student på Chas Academy)
 Utbildning: Fullstack JavaScript Extended
 Länk till mitt project (GitHub): https://github.com/HappyLife23/cv-uppgift.git
+Länk till Netlify: https://steady-biscochitos-3dff6c.netlify.app
