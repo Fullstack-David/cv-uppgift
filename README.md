@@ -23,3 +23,7 @@ Responsiv design
 En av huvudpunkterna i mitt projekt är den responsiva designen. Oavsett vilken enhet besökaren använder, kommer sidan automatiskt anpassa sig för att säkerställa en optimal visning och användarupplevelse. Detta skapar en enhetlig och tilltalande presentation oavsett om det är en dator, surfplatta eller mobiltelefon.
 
 Tack för att du utforskar mitt CV-projekt! Om du har några frågor eller feedback är jag öppen för att höra från dig. Jag hoppas att du finner sidan informativ och njuter av den användarvänliga upplevelsen.
+
+Skapad av : David Heidari (student på Chas Academy)
+Utbildning: Fullstack JavaScript Extended
+Länk till mitt project (GitHub): https://github.com/HappyLife23/cv-uppgift.git
