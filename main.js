@@ -1,3 +1,6 @@
+// De här två har jag skrivit själv. h1-eventet har jag skrivit helt själv, men att skifta till mörk läge och ljusläge fick jag lite hjälp av google sökandet.
+
+
 const titel = document.getElementById('titel');
 const icon = document.querySelector('.dark-mode');
 
