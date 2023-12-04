@@ -18,12 +18,15 @@ function createContainer() {
 // Skapar funktion som skapar en navbar i min container
 function createNavbar(navbarData) {
     const navbar = document.createElement('nav');
+
+    // här vill jag skapa en a-tagg i min navbar och hämta informationen från JSON
+    /**************** men den funkar inte ?? ********************/
     navbarData.forEach(item => {
         const link = document.createElement('a');
         link.href = '#';
         link.textContent = item.logo || item.home || item.about || item.project || item.contact || item.login;
         navbar.appendChild(link);
-    })
+    });
 
     return navbar;
 }
