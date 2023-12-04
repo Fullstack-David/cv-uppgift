@@ -1,0 +1,43 @@
+{
+    "home":[
+        {
+            "navbar":[
+                {
+                    "logo": "logo"                                          
+                },
+                {
+                    "home": "home",
+                    "about": "anout",
+                    "project": "project"
+                },
+                {
+                    "contact": "contact",
+                    "login": "login"
+                }
+
+            ],
+            "header":[
+                {
+                    "titel": "Wellcome to my website",
+
+                    "picture": "./assets/minImg2.png"
+                }
+                
+            ],
+            "main":[
+                {
+                    "h2": "h2",
+                    "para": "para"
+
+                }
+            ],
+            "footer":[
+                {
+                    "footerPara": "footerPara"
+                }
+               
+            ]
+
+        }
+    ]
+}

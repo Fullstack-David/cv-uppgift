@@ -1,56 +1,80 @@
-// De här två har jag skrivit själv. h1-eventet har jag skrivit helt själv, men att skifta till mörk läge och ljusläge fick jag lite hjälp av google sökandet.
 
+// json fetch
+async function home() {
+    const response = await fetch('main.json');
 
-const titel = document.getElementById('titel');
-const icon = document.querySelector('.dark-mode');
-
-// Variabel för att hålla reda på om stilen är utökad eller inte
-let isExpanded = false;
-
-// Funktion för att tillämpa den önskade stilen
-function applyStyles() {
-    titel.style.width = '50%';
-    titel.style.display = 'flex'
-    titel.style.alignItems = 'center';
-    titel.style.justifyContent = 'center';
-    titel.style.margin = '2rem auto';
-    titel.style.padding = '10px 15px';
-    titel.style.borderRadius = '8px';
-    titel.style.color = 'white';
-    titel.style.letterSpacing = '8px';
-    
-    // Uppdatera isExpanded-variabeln till true eftersom stilen nu är utökad
-    isExpanded = true;
-    
-}
-// Funktion för att återställa till den ursprungliga stilen
-function resetStyles() {
-    titel.removeAttribute('style');
-    isExpanded = false;
-
-}
-// Funktion som hanterar klickhändelsen på elementet
-function handleTitelClick() {
-    if (isExpanded) {
-        resetStyles();
+    if (response.ok) {
+        const home = await response.json();
     } else {
-        applyStyles();
+        console.log('Error' + response.status);
     }
 }
+// Skapar en div-container med id: container 
+function createContainer() {
+    const container = document.createElement('div');
+    container.id = 'container';
+    return container;
+}
+// Skapar funktion som skapar en navbar i min container
+function createNavbar(navbarData) {
+    const navbar = document.createElement('nav');
+    navbarData.forEach(item => {
+        const link = document.createElement('a');
+        link.href = '#';
+        link.textContent = item.logo || item.home || item.about || item.project || item.contact || item.login;
+        navbar.appendChild(link);
+    })
 
-titel.addEventListener('click', handleTitelClick);
+    return navbar;
+}
 
 
-// min dark-mode event
-icon.addEventListener('click', function () {
-    
-    let element = document.body; // Hämtar referensen till <body> elementet
-    element.classList.toggle('dark-mode'); // Växlar klassen 'dark-mode' på <body> elementet, vilket styr utseendet med hjälp av CSS
+// Skapar en function som skapar en header i min container
 
-    icon.document.style.borderRadius = '50%';
+function createHeader() {
+    const header = document.createElement('header');
+    return header;
+}
 
-});
+// Skapar en function som skapar en main i min container
+function createMain() {
+    const main = document.createElement('main');
+    return main;
+
+}
+
+// skapar en funcrion som skapar en footer i min container
+function createFooter() {
+    const footer = document.createElement('footer');
+    return footer;
+}
+
+
+home().then(data => {
+    if (data) {
+        const navbar = createNavbar(data.navbar)
+    }
+})
 
 
 
+// skapar en function där jag appendar alla element till sidan
+function bildPage() {
+    const container = createContainer();
+    const navbar = createNavbar();
+    const header = createHeader();
+    const main = createMain();
+    const footer = createFooter();
+
+    // appendar elarna till container
+    container.appendChild(navbar);
+    container.appendChild(header);
+    container.appendChild(main);
+    container.appendChild(footer);
+
+    // appendar container till document
+    document.body.appendChild(container);
+}
+
+bildPage();
 

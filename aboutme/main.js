@@ -9,41 +9,33 @@ async function getInfo() {
     if (response.ok) {
         const myCvs = await response.json();
         getCvs(myCvs); // Anropa funktionen getCvs med den hämtade JSON-data
-
         
     } else {
-        console.log("Error" + response.status);
-        
+        console.log("Error" + response.status);        
     }
 }
 
 
 function getCvs(myCvs) {
     
+    // Skapar några childElement i min mainContent 
     const cvLists = document.createElement('ul');
     const titel = document.createElement('h1');
     const firstDiv = document.createElement('div');
-    
-    
 
     myCvs.forEach(function (myCv) {
-
         
+        // Skapar childElement till mina divar
         const liLists = document.createElement('li');
-
         const infoHeader = document.createElement('h3');
-
         const infoPara = document.createElement('p');
+        const infoImg = document.createElement('img'); 
 
-        const infoImg = document.createElement('img'); // Lägg till en bildtagg
-
+        // hämtar min information från min JSONfil
         infoHeader.textContent = `${myCv.topic}`
-
         infoPara.textContent = myCv.description;
-
         titel.textContent = 'My projects';
-
-        infoImg.src = myCv.picture; // Sätt bildkälla
+        infoImg.src = myCv.picture; 
         
         // ger min div divar varsit classnamn
         firstDiv.classList.add('firstDiv')
