@@ -1,5 +1,6 @@
 :root {
-  --ff-Ephesis: "Roboto", sans-serif;
+  --main-color: white;
+  --font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -7,7 +8,398 @@
   margin: 0;
   padding: 0;
 }
-#container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+body {
+  height: 100vh;
+  font-family: var(--font-family);
+  background-color: white;
+  color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*---- min dark-mode js -----*/
+.dark-mode {
+  color: white;
+  background-color: rgb(3, 3, 3);
+  border-radius: 50%;
+}
+
+.dark-mode img {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+/*----- ändrar på content-klassen på hela sidan-------*/
+.content {
+  padding: 1rem;
+}
+/*------------- Navbar ---------------------*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #1f4037;
+  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+  background: linear-gradient(to right, #99f2c8, #1f4037);
+}
+
+.active-link {
+  border-bottom: 1px solid;
+}
+
+.nav-logo {
+  display: none;
+}
+
+.nav-home {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 20px;
+}
+
+.nav-home a,
+.colo-btn a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+.colo-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 1rem;
+}
+
+.contact-btn {
+  background-color: #87bbd9;
+  padding: 6px 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.login-btn {
+  background-color: lightgray;
+  color: white;
+  padding: 6px 25px;
+  border-radius: 5px;
+}
+
+/* -----Navbar hover effekt ---- */
+.nav-logo a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+}
+.nav-home a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+  font-size: 1.3rem;
+}
+
+.colo-btn a:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+}
+.contact-btn a:hover {
+  background-color: #51a4d4;
+}
+/*----------- Section one ---------------------*/
+
+.main-section-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-one,
+.box-two {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  line-height: 1.1rem;
+}
+.content a {
+  color: #3a86ff;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+}
+h2 {
+  font-size: 1.4rem;
+}
+
+.box-one img,
+.box-two img {
+  width: 100%;
+  border-radius: 5px;
+}
+/* box-one and box-two:hover effekt */
+.box-one:hover img,
+.box-two:hover img {
+  transform: rotateY(15deg);
+  transition: 1s;
+}
+
+p::first-letter {
+  font-size: 1.7rem;
+}
+p {
+  padding-top: 10px;
+  line-height: 2rem;
+}
+
+.cv-link a {
+  color: #3a86ff;
+
+  text-decoration: none;
+}
+.gitHub {
+  display: block;
+}
+.gitHub a {
+  color: #3a86ff;
+  text-decoration: none;
+}
+
+.a-hover:hover {
+  transition: 0.5s;
+  border-bottom: 1px solid;
+}
+/*----- link-hover-----*/
+.cv-link a:hover,
+.gitHub a:hover {
+  border-bottom: 1px solid #3a86ff;
+}
+
+/*--------- h1-style --------*/
+
+h1 {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*----------- Section two ---------------------*/
+
+.main-section-two {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.div-firsttwo-box,
+.div-secondtwo-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 50%;
+}
+
+.main-section-two h2 {
+  padding: 1rem;
+}
+
+/* Här har jag börjat min extra-touch */
+
+.box-three img,
+.box-four img,
+.box-five img,
+.box-six img {
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+}
+/*--------styling på mina images----------*/
+
+.text-behind-three,
+.text-behind-four,
+.text-behind-five,
+.text-behind-six {
+  padding: 0 1rem;
+  line-height: 10px;
+}
+
+.main-section-two p {
+  font-size: 1rem;
+}
+
+.box-three,
+.box-four,
+.box-five,
+.box-six {
+  align-items: center;
+  border: 1px solid;
+
+  /*background-color: #a1d07f;*/
+}
+
+.btn-btn {
+  font-size: 1rem;
+  background-color: #528aec;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+}
+.btn-btn:last-child {
+  margin-bottom: 10px;
+}
+.btn-btn:hover {
+  color: #f4e87c;
+  transition: 0.5s;
+  background-color: #3e5c76;
+}
+
+/*-------------Footer-----------------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: #003973;
+  background: -webkit-linear-gradient(to right, #e5e5be, #003973);
+  background: linear-gradient(to right, #e5e5be, #003973);
+}
+
+.footer-menu {
+  flex-direction: row;
+  display: flex;
+  font-size: 2.5rem;
+  gap: 50px;
+  padding: 20px;
+}
+
+.footer-menu .fa-facebook:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-instagram:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-square-github:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+.footer-menu .fa-linkedin:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+}
+
+/*---- media queri--------*/
+
+@media (min-width: 768px) and (max-width: 2200px) {
+  .navbar {
+    display: flex;
+  }
+  .nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .nav-logo a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+  }
+  .nav-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .colo-btn {
+    display: flex;
+    flex-direction: row;
+  }
+  /*-----main-section-one styling-------*/
+  .main-section-one {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box-one,
+  .box-two {
+    margin: 1rem 0;
+    min-width: 50%;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img {
+    width: 400px;
+    height: 250px;
+  }
+
+  /*------------------- main-section-two ------------------------*/
+  .main-section-two {
+    display: flex;
+    flex-direction: row;
+  }
+  /*--------ändrar alla bilder på section två -------*/
+
+  .div-firsttwo-box,
+  .div-secondtwo-box {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+  }
+  .box-three,
+  .box-four,
+  .box-five,
+  .box-six {
+    max-width: 50%;
+    height: 20%;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .box-three:hover .text-behind-three,
+  .box-four:hover .text-behind-four,
+  .box-five:hover .text-behind-five,
+  .box-six:hover .text-behind-six {
+    opacity: 1;
+  }
+
+  .sectiontwo-images img {
+    display: none;
+  }
+  .sectiontwo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectiontwo-images:hover img,
+  .sectiontwo-images:hover img,
+  .sectiontwo-images:hover img,
+  .sectiontwo-images:hover img {
+    transform: translateX(-150%);
+  }
+  .text-behind-three,
+  .text-behind-four,
+  .text-behind-five,
+  .text-behind-six {
+    background-color: lightblue;
+    padding: 1rem;
+    line-height: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 0.3s;
+  }
 }
