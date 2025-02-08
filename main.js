@@ -60,10 +60,6 @@ function closeModal() {
   myModal.style.display = "none";
   overlay.style.display = "none";
 }
-// closeModalBtn.addEventListener("click", () => {
-//   myModal.style.display = "none";
-//   overlay.style.display = "block";
-// });
 
 closeModalBtn.addEventListener("click", closeModal);
 
