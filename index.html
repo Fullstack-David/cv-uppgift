@@ -26,7 +26,6 @@
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <!--Navbar menyn-->
     <nav class="navbar">
       <div class="nav-logo"><a href="index.html">Logo</a></div>
       <div class="nav-home">
@@ -38,27 +37,20 @@
         <a href="./contact/index.html" class="contact-btn">Contact</a>
         <a href="#" class="login-btn">Login</a>
       </div>
-      <div class="dark-mode">
-        <img src="./assets/icons8-moon-50.png" alt="icon" />
-      </div>
     </nav>
 
-    <!--Main content för alla sex-boxar-->
-    <!--Main-section-one, box-three and box-four in thw home-page-->
     <section class="main-section-one">
       <div class="box-one">
         <div class="image">
           <img src="./assets/laptop.jpg" alt="laptop" />
         </div>
-
         <div class="content">
           <h2>
             <a href="./aboutme/index.html" class="a-hover">About me</a>
           </h2>
           <p>
-            En superengagerad fullstack-utvecklare student som verkar ha hittat
-            sin personal legend. Jag är taggad på vad jag kommer lära mig under
-            de två åren på Fullstack utvecklare och sjukt nyfiken.
+            Here’s a little preview of my IT projects that I’ve created over the
+            past year. If you want to see more, feel free to scroll forward.
           </p>
         </div>
       </div>
@@ -70,118 +62,35 @@
           <h2>
             <a href="./project/index.html" class="a-hover">Information</a>
           </h2>
-
           <p>
-            Här får du en liten försmak av mina it-projekt som jag har skapat
-            senatse året. Om du vill se mer så kan du bläddra framåt. <br />
+            Here’s a little taste of my IT projects created over the past year.
+            If you want to see more, you can scroll forward. <br />
             <span class="cv-link">
-              <a href="./aboutme/index.html">Kika på mitt CV</a></span
+              <a href="./aboutme/index.html">Resume</a></span
             >
             <span class="gitHub">
               <a href="https://github.com/HappyLife23/games.git"
-                >Mitt GitHub projekt</a
+                >GitHub</a
               ></span
             >
           </p>
         </div>
       </div>
     </section>
-
-    <!--Härifrån ska jag ändra mina fyra boxar, box three, four, five and six-->
-    <div class="main-sectiontwo-title">
-      <h1 id="titel">✅ Projects ✅</h1>
-      <!--<a href="./project/index.html">Projects</a>-->
+    <div class="main-content">
+      <button id="title-one">Hobbys</button>
+      <button id="title-two">Educations</button>
+      <button id="title-three">Visions</button>
+      <button id="title-four">Atomic Habits</button>
     </div>
-    <div class="main-section-two">
-      <div class="div-firsttwo-box">
-        <div class="box-three">
-          <div class="sectiontwo-images">
-            <img src="./assets/nature.jpg" alt="anonymous" />
-          </div>
-          <div class="sectiontwo-title"><h2>Hobbys</h2></div>
-          <div class="text-behind-three">
-            <p>
-              Naturen är en källa till skönhet, frid och inspirerande mångfald
-              som berikar våra liv. Naturen är en källa till skönhet, frid och
-              inspirerande mångfald som berikar våra liv.I dess stillhet finner
-              vi en universell symfoni, där varje blad och varje droppe vittnar
-              om naturens tidlösa och sublima konstverk.
-            </p>
-            <button
-              class="btn-btn"
-              onclick="window.location.href='../aboutme/index.html'"
-            >
-              Read more
-            </button>
-          </div>
-        </div>
-        <div class="box-four">
-          <div class="sectiontwo-images">
-            <img src="./assets/students.jpg" alt="anonymous" />
-          </div>
-          <div class="sectiontwo-title"><h2>Educations</h2></div>
-
-          <div class="text-behind-four">
-            <p>
-              Utbildning är nyckeln till kunskap, utveckling och möjligheter i
-              livet. Utbildning är nyckeln till kunskap, utveckling och
-              möjligheter i livet. Varje kunskapsbit är som ett steg framåt,
-              vägledande oss på resan mot personlig tillväxt och en fördjupad
-              förståelse av världen omkring oss.
-            </p>
-            <button
-              class="btn-btn"
-              onclick="window.location.href='../aboutme/index.html'"
-            >
-              Read more
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!--Section två för de andra sista boxarna-->
-      <div class="div-secondtwo-box">
-        <div class="box-five">
-          <div class="sectiontwo-images">
-            <img src="./assets/mobile-1.jpg" alt="anonymous" />
-          </div>
-          <div class="sectiontwo-title"><h2>Visions</h2></div>
-          <div class="text-behind-five">
-            <p>
-              Min vision strävar efter att etablera ett eget företag för att
-              göra en positiv inverkan på samhället genom hållbarhet och socialt
-              ansvarstagande. Målet är inte bara att generera ekonomisk vinning
-              utan även att främja välmående och positiv utveckling i samhället.
-            </p>
-            <button
-              class="btn-btn"
-              onclick="window.location.href='../aboutme/index.html'"
-            >
-              Read more
-            </button>
-          </div>
-        </div>
-
-        <div class="box-six">
-          <div class="sectiontwo-images">
-            <img src="./assets/anonymous.jpg" alt="anonymous" />
-          </div>
-          <div class="sectiontwo-title"><h2>Lorem Ipsum</h2></div>
-          <div class="text-behind-six">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
-              deleniti exercitationem quasi excepturi architecto voluptate.
-              Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit.consectetur adipisicing elit.consectetur adipisicing
-              elit.consectetur adipisicing elit.
-            </p>
-            <button class="btn-btn">Read more</button>
-          </div>
-        </div>
+    <div id="modalOverlay" class="modal-overlay" style="display: none"></div>
+    <div id="my-modal">
+      <span id="closeModalBtn" class="close">&times;</span>
+      <div class="modal-content">
+        <p id="modalText"></p>
       </div>
     </div>
 
-    <!--Footer-->
     <footer>
       <div class="footer-menu">
         <i class="fa-brands fa-facebook" style="color: #0026e6"></i>
@@ -190,7 +99,6 @@
         <i class="fa-brands fa-linkedin" style="color: #005eff"></i>
       </div>
     </footer>
-    <!--JavaScript länk för att ikonerna ska fungera som ikoner-->
     <script
       src="https://kit.fontawesome.com/978f3efbb8.js"
       crossorigin="anonymous"
@@ -198,3 +106,5 @@
     <script src="main.js"></script>
   </body>
 </html>
+
+<!-- om jag har två eller fyra knappar som ska klickas och modalen öppnas, behöver jag skapa lika många eventlistener eller räcker det med en? all info ska hämtas från data.json -->

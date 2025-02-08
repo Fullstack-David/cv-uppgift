@@ -11,7 +11,6 @@
 body {
   height: 100vh;
   font-family: var(--font-family);
-  background-color: #648767;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,9 +19,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background: #1f4037;
-  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-  background: linear-gradient(to right, #99f2c8, #1f4037);
+  background-color: lightgray;
 }
 a {
   text-decoration: none;
@@ -78,7 +75,6 @@ a {
   transition: 0.5s;
 }
 .nav-home a:hover {
-  color: #f4e87c;
   transition: 0.5s;
   font-size: 1.3rem;
 }
@@ -101,9 +97,6 @@ a {
   flex-direction: column;
   width: 100%;
   margin-top: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 form label {
   font-size: 1.2rem;
@@ -175,16 +168,12 @@ input {
   }
 }
 
-/*--------här slutar det-----------*/
-
 /*-------------Footer-----------------------*/
 
 footer {
   display: flex;
   justify-content: center;
-  background: #003973;
-  background: -webkit-linear-gradient(to right, #e5e5be, #003973);
-  background: linear-gradient(to right, #e5e5be, #003973);
+  background-color: lightgray;
 }
 
 .footer-menu {

@@ -11,15 +11,12 @@
 body {
   height: 100vh;
   font-family: var(--font-family);
-  background-color: #b0c4b1;
 }
 /*------------- Navbar ---------------------*/
 .navbar {
   display: flex;
+  background-color: lightgray;
   justify-content: space-between;
-  background: #1f4037;
-  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-  background: linear-gradient(to right, #99f2c8, #1f4037);
 }
 .active-link {
   border-bottom: 1px solid;
@@ -107,21 +104,9 @@ body {
   width: 100%;
   height: auto;
 }
-
 h1 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin-top: 1rem;
-  font-size: 2rem;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  font-family: "Times New Roman", Times, serif;
-  background: #00416a;
-  background: -webkit-linear-gradient(to right, #ffe000, #799f0c, #00416a);
-  background: linear-gradient(to right, #ffe000, #799f0c, #00416a);
+  padding-left: 20px;
+  margin: 2rem 0;
 }
 p::first-letter {
   font-size: 2rem;
@@ -136,9 +121,7 @@ p {
 footer {
   display: flex;
   justify-content: center;
-  background: #003973;
-  background: -webkit-linear-gradient(to right, #e5e5be, #003973);
-  background: linear-gradient(to right, #e5e5be, #003973);
+  background-color: lightgray;
 }
 
 .footer-menu {
@@ -205,5 +188,10 @@ footer {
     flex-direction: row;
     margin-top: 1rem;
     margin-bottom: 3%;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }

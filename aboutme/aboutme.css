@@ -12,7 +12,6 @@
 body {
   height: 100vh;
   font-family: var(--font-family);
-  background-color: #8670a9;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,9 +20,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background: #1f4037;
-  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-  background: linear-gradient(to right, #99f2c8, #1f4037);
+  background-color: lightgray;
 }
 .active-link {
   border-bottom: 1px solid;
@@ -74,15 +71,16 @@ body {
 
 /* -----Navbar hover effekt ---- */
 .nav-logo a:hover {
+  color: #f4e87c;
   transition: 0.5s;
-  transform: scale(1.1);
 }
 .nav-home a:hover {
   transition: 0.5s;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .colo-btn a:hover {
+  color: #f4e87c;
   transition: 0.5s;
   background-color: #878787;
 }
@@ -138,21 +136,10 @@ img {
 
 footer {
   bottom: 0;
-  width: 100%;
   display: flex;
   justify-content: center;
   padding: 20px;
-  background: #003973; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #e5e5be,
-    #003973
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #e5e5be,
-    #003973
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: lightgray;
 }
 
 .footer-menu {
@@ -231,5 +218,10 @@ footer {
   }
   li {
     max-width: 25%;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
